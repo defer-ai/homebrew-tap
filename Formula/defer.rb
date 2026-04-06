@@ -5,21 +5,21 @@
 class Defer < Formula
   desc "Zero-autonomy AI. Every decision is yours."
   homepage "https://github.com/defer-ai/cli"
-  version "3.5.6"
+  version "3.5.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/defer-ai/cli/releases/download/v3.5.6/defer_3.5.6_darwin_amd64.tar.gz"
-      sha256 "f7af011d577eecab893e461fafc3e75a5a5be92efb2753d4f5fac73deb4562e3"
+      url "https://github.com/defer-ai/cli/releases/download/v3.5.7/defer_3.5.7_darwin_amd64.tar.gz"
+      sha256 "c650ed7c9a4f2eb90d06079e0669ae8b154a735c81ae9ec5f0fd8bd4eacb0c19"
 
       define_method(:install) do
         bin.install "defer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/defer-ai/cli/releases/download/v3.5.6/defer_3.5.6_darwin_arm64.tar.gz"
-      sha256 "2c0ca783dc6135619c737c3f3cc96fd529299ee82ab541b3397440af758c0054"
+      url "https://github.com/defer-ai/cli/releases/download/v3.5.7/defer_3.5.7_darwin_arm64.tar.gz"
+      sha256 "3e531aed95e20394f1675f9bc3a2c2b1eebe28cbb56fbfcd08e58b1d6fd70cbd"
 
       define_method(:install) do
         bin.install "defer"
@@ -29,15 +29,15 @@ class Defer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defer-ai/cli/releases/download/v3.5.6/defer_3.5.6_linux_amd64.tar.gz"
-      sha256 "e20a6d32d2ff1a43defbb974018348cf8f411f2bc8ef5e4eae336143601bfdd6"
+      url "https://github.com/defer-ai/cli/releases/download/v3.5.7/defer_3.5.7_linux_amd64.tar.gz"
+      sha256 "17e5ffd1a5d2df6bd8e0b787d39ea8434665fab96d0846be2f4cb8a019d4c8d8"
       define_method(:install) do
         bin.install "defer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/defer-ai/cli/releases/download/v3.5.6/defer_3.5.6_linux_arm64.tar.gz"
-      sha256 "23893469653964ffbbf84362b8ba88eb5938e92e390320d3ef166ecfa8ac5afc"
+      url "https://github.com/defer-ai/cli/releases/download/v3.5.7/defer_3.5.7_linux_arm64.tar.gz"
+      sha256 "3d49aca27279a8506879c281bf86c96610e7795eded683f01e48fa9f78e0d4db"
       define_method(:install) do
         bin.install "defer"
       end
